@@ -12,29 +12,31 @@
     <!-- Open Modal -->
      <h1 id="show-modal">Add Bookmark</h1>
      <!-- Bookmarks -->
-      <div class="container" id="bookmarks-container">
-        <div class="item">
-            <i class="fa-solid fa-xmark" id="delete-bookmark" title="Delete Bookmark"></i>
-            <div class="name">
-                <img src="https://s2.googleusercontent.com/s2/favicons?domain=www.google.com" alt="Favicon">
-                <a href="www.google.com" target="_blank">Google</a>
+      <div class="container" id="bookmarks-container"></div>
+      <!-- Modal -->
+       <div class="modal-container" id="modal">
+            <div class="modal">
+                <i class="fa-solid fa-xmark close-icon" id="close-modal"></i>
+                <div class="modal-header">
+                    <h3>Add Bookmark</h3>
+                </div>
+                <div class="modal-content">
+                    <form id="bookmark-form">
+                        <!-- Website Name -->
+                         <div class="form-group">
+                            <label for="website-name" class="form-label">Website name</label>
+                            <input type="text" class="form-input" id="website-name">
+                         </div>
+                        <!-- Website URL -->
+                         <div class="form-group">
+                            <label for="website-url" class="form-label">Website URL</label>
+                            <input type="text" class="form-input" id="website-url">
+                         </div>
+                         <button type="submit">Save</button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-xmark" id="delete-bookmark" title="Delete Bookmark"></i>
-            <div class="name">
-                <img src="https://s2.googleusercontent.com/s2/favicons?domain=www.youtube.com" alt="Favicon">
-                <a href="www.youtube.com" target="_blank">Youtube</a>
-            </div>
-        </div>
-        <div class="item">
-            <i class="fa-solid fa-xmark" id="delete-bookmark" title="Delete Bookmark"></i>
-            <div class="name">
-                <img src="https://s2.googleusercontent.com/s2/favicons?domain=www.x.com" alt="Favicon">
-                <a href="www.x.com" target="_blank">Twitter</a>
-            </div>
-        </div>
-      </div>
+       </div>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
